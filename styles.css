@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: skyblue;
+}
+
+.wrapper {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.input-section #search-id {
+    border-radius: 5px;
+    background-color: rgb(92, 116, 255);
+    color: #fff;
+}
+
+#search-id:hover {
+    border-radius: 6px;
+    background-color: lightblue;
+    color: #000;
+}
