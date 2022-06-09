@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -60,10 +61,40 @@ body {
 .info-wrapper h1 {
     color: black;
     text-decoration: underline;
+    font-family: "Open Sans";
+    margin: 10px;
 }
 
 .info-wrapper p {
     color: black;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 5px;
 } 
+
+.info-wrapper button {
+    width: 40%;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: skyblue;
+    color: black;
+}
+
+#unit-button img {
+    width: 45px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+#unit-button:hover{
+    width: 42%;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+#unit-button:hover img{
+    width: 45.5%;
+}
