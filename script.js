@@ -13,10 +13,12 @@ function convertKeltoC(val) {
 
 // Fetch Method
 submitBtn.addEventListener("click", function() {
-    fetch("https://api.openweathermap.org/data/3.0/weather?q=" + inputVal + "&appid" + apiKey).then(res => res.json()).then(data => {
-    let nameVal = data["name"];
-    let desc = data["weather"][0]["description"];
-    let temp = data["main"]["temp"];
-    city.innerHTML = "Weather of <span>${nameVal}</span>"
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputVal.value + "&appid" + apiKey)
+    .then(res => res.json())
+    .then(data => {
+        let nameVal = data["name"];
+        let desc = data["weather"][0]["description"];
+        let temp = data["main"]["temp"];
+        city.innerHTML = `Weather of <span>${nameVal}</span>`
     })
 });
