@@ -2,9 +2,11 @@ let inputVal = document.querySelector("#city-input");
 let submitBtn = document.querySelector("#submit-button");
 let city = document.querySelector("#city-display");
 let  description = document.querySelector("#description");
-let temperatureC = document.querySelector("#temp");
-let temperatureF = document.querySelector("#temp");
+let temperature = document.querySelector("#temp");
 let unitBtn = document.getElementById("unit-button");
+let currUnit = "C";
+let tempC;
+let tempF;
 
 let apiKey = "2e28d7e9243bc054f306ec962e33fb4e";
 
@@ -24,13 +26,12 @@ submitBtn.addEventListener("click", function() {
     .then(data => {
         let nameVal = data["name"];
         let desc = (data["weather"][0]["description"]).toUpperCase();
-        let tempC = convertKeltoC(data["main"]["temp"]);
-        let tempF = convertCtoF(tempC);
-
+        tempC = convertKeltoC(data["main"]["temp"]);
+        tempF = convertCtoF(tempC);
         city.innerHTML = `<span>${nameVal}</span>'s Weather`;
         description.innerHTML = `<span>${desc}</span>`;
-        temperatureC.innerHTML = `<span>${tempC}°C</span>`;
-        //temperatureF.innerHTML = `<span>${tempF}°F</span>`;
+        temperature.innerHTML = `<span>${tempC}°C</span>`;
+        
     })
     .catch(err => alert ("Enter a Valid City"));
     displayUnitButton(true);
@@ -46,9 +47,16 @@ function displayUnitButton(booIn) {
     }
 }
 
-// Change Unit
-function changeUnit() {
-
-}
-
 displayUnitButton(false);
+
+// Unit Button
+unitBtn.addEventListener("click", function() {
+    if (currUnit.equals("C")) {
+        currUnit.equals("F");
+        temperature.innerHTML = `<span>${tempF}°C</span>`;
+    }
+    else {
+        currUnit.equals("C");
+        temperature.innerHTML = `<span>${tempC}°C</span>`;
+    }
+});
