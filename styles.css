@@ -18,13 +18,29 @@ body {
     border-radius: 15px;
 }
 
-.input-section #search-id {
+.input-section input {
+    margin: 10px;
+}
+
+.button-section #search-id {
     border-radius: 5px;
     background-color: rgb(92, 116, 255);
     color: #fff;
 }
 
 #search-id:hover {
+    border-radius: 6px;
+    background-color: lightblue;
+    color: #000;
+}
+
+.button-section #curr-location-id {
+    border-radius: 5px;
+    background-color: rgb(92, 116, 255);
+    color: #fff;
+}
+
+#curr-location-id:hover {
     border-radius: 6px;
     background-color: lightblue;
     color: #000;
