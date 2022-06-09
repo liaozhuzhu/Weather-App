@@ -1,7 +1,7 @@
 let inputVal = document.querySelector("#city-input");
 let submitBtn = document.querySelector("#submit-button");
 let city = document.querySelector("#city-display");
-let  description = document.querySelector("#description");
+let description = document.querySelector("#description");
 let temperature = document.querySelector("#temp");
 let unitBtn = document.getElementById("unit-button");
 let currUnit = "C";
@@ -31,10 +31,11 @@ submitBtn.addEventListener("click", function() {
         city.innerHTML = `<span>${nameVal}</span>'s Weather`;
         description.innerHTML = `<span>${desc}</span>`;
         temperature.innerHTML = `<span>${tempC}°C</span>`;
-        
+        displayUnitButton(true);
     })
     .catch(err => alert ("Enter a Valid City"));
-    displayUnitButton(true);
+    displayUnitButton(false);
+    
 });
 
 // Display Unit Button
@@ -51,12 +52,12 @@ displayUnitButton(false);
 
 // Unit Button
 unitBtn.addEventListener("click", function() {
-    if (currUnit.equals("C")) {
-        currUnit.equals("F");
-        temperature.innerHTML = `<span>${tempF}°C</span>`;
+    if (currUnit == "C") {
+        currUnit = "F";
+        temperature.innerHTML = `<span>${tempF}°F</span>`;
     }
     else {
-        currUnit.equals("C");
+        currUnit = "C";
         temperature.innerHTML = `<span>${tempC}°C</span>`;
     }
 });
