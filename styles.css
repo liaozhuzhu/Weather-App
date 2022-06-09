@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,8 +30,8 @@ body {
 
 .input-wrapper #submit-button {
     border-radius: 5px;
-    background-color: darkblue;
-    color: white;
+    background-color: rgb(72, 197, 255);
+    color: rgb(0, 0, 0);
     height: 30px;
     width: 30px;
 }
@@ -40,8 +40,20 @@ body {
     border-radius: 6px;
     background-color: rgb(96, 162, 255);
     color: white;
+}
+
+.input-wrapper #current-location {
+    border-radius: 5px;
+    background-color: rgb(72, 197, 255);
+    color: rgb(0, 0, 0);
     height: 30px;
-    width: 30px;
+    width: 40%;
+}
+
+#current-location:hover {
+    border-radius: 6px;
+    background-color: rgb(96, 162, 255);
+    color: white;
 }
 
 .display-wrapper {
@@ -60,8 +72,8 @@ body {
 
 .info-wrapper h1 {
     color: black;
-    text-decoration: underline;
-    font-family: "Open Sans";
+    font-size: 30px;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
     margin: 10px;
 }
 
@@ -69,12 +81,12 @@ body {
     color: black;
     text-decoration: none;
     font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
     margin: 5px;
 } 
 
 .info-wrapper button {
-    width: 40%;
+    width: 30%;
     padding: 3px;
     border-radius: 4px;
     background-color: skyblue;
@@ -82,7 +94,7 @@ body {
 }
 
 #unit-button img {
-    width: 45px;
+    width: 40%;
     height: 30px;
     border-radius: 5px;
     text-align: center;
@@ -90,11 +102,11 @@ body {
 }
 
 #unit-button:hover{
-    width: 42%;
+    width: 32%;
     border-radius: 5px;
     background-color: lightblue;
 }
 
 #unit-button:hover img{
-    width: 45.5%;
+    width: 42%;
 }
