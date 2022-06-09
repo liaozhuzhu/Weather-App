@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightblue;
+}
+
+.wrapper{
+    width: 410px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.input-wrapper {
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.input-wrapper #city-input  {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.input-wrapper #submit-button {
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+
+#submit-button:hover {
+    border-radius: 6px;
+    background-color: rgb(96, 162, 255);
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+
+.display-wrapper {
+    text-align: center;
+    width: 400px;
+    color: skyblue;
+}
+
+.info-wrapper {
+    background: white;
+    height: 45vh;
+    margin: 50px auto;
+    border-radius: 5px;
+}
