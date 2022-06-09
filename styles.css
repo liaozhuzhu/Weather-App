@@ -93,20 +93,8 @@ body {
     color: black;
 }
 
-#unit-button img {
-    width: 40%;
-    height: 30px;
-    border-radius: 5px;
-    text-align: center;
-    margin: auto;
-}
-
 #unit-button:hover{
     width: 32%;
     border-radius: 5px;
     background-color: lightblue;
-}
-
-#unit-button:hover img{
-    width: 42%;
 }
