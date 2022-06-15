@@ -20,7 +20,7 @@ let apiKey = "2e28d7e9243bc054f306ec962e33fb4e";
 
 // Convert Kelvin to Celsius
 function convertKeltoC(val) {
-    return (val - 271.5).toFixed(2);
+    return (val - 273.15).toFixed(2);
 }
 
 function convertCtoF(val) {
